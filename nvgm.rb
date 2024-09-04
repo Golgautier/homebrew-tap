@@ -9,7 +9,7 @@ class Nvgm < Formula
 
   on_macos do
     url "https://github.com/Golgautier/nutanix_vg_manager/releases/download/v1.0.4/nutanix_vg_manager_1.0.4_darwin_all.tar.gz"
-    sha256 "49172c21302606bd5f20318164ef770573270abcddcfa1f26b8aea49dc145f8a"
+    sha256 "b92cb2bb6d445b699633db74560d04d1782c9bc2c338ae817b18ce7f63169208"
 
     def install
       bin.install "nvgm"
@@ -20,7 +20,7 @@ class Nvgm < Formula
     on_intel do
       if Hardware::CPU.is_64_bit?
         url "https://github.com/Golgautier/nutanix_vg_manager/releases/download/v1.0.4/nutanix_vg_manager_1.0.4_linux_amd64.tar.gz"
-        sha256 "df6532b7fc7dce9b18f2840543e63a1cbf4e8717532c4db0cfb9d723413ce66a"
+        sha256 "e013bbd3cc807d49a717a1da3c27c38a609fc0105e78a14d9fb84abf56d48274"
 
         def install
           bin.install "nvgm"
@@ -30,7 +30,7 @@ class Nvgm < Formula
     on_arm do
       if Hardware::CPU.is_64_bit?
         url "https://github.com/Golgautier/nutanix_vg_manager/releases/download/v1.0.4/nutanix_vg_manager_1.0.4_linux_arm64.tar.gz"
-        sha256 "01867de9923fbe7de37387bb206ce3d098c8617721797e5fda394dd32fde92d3"
+        sha256 "59272d46af595501301dd50c6a2ecb585d4306b333dcb821f014e302db3fa2b4"
 
         def install
           bin.install "nvgm"
